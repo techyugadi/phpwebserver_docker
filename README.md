@@ -21,7 +21,7 @@ sudo docker build -t="your_user/phpwebserver" .
 
 # Using Volume
 
-It is recommended that you mount a directory containing your PHP files at /content. It is better not to mount the directory directly at / because we have copied an index.php file there. When the docker starts up, you can point your browser to the HTTP URL of the web server (from our /index.php ). You will see a message "Hello World!" and the current time printed. This will be a quick sanity test that the docker was started up successfully.
+It is recommended that you mount a directory containing your PHP files at /content. It is better not to mount the directory directly at the root folder ( / ) because we have copied an index.php file there. When the docker starts up, you can point your browser to the HTTP URL of the web server. You will see a message "Hello World!" and the current time printed (from our /index.php ). This will be a quick sanity test that the docker was started up successfully.
 
 # Run
 
