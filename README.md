@@ -27,7 +27,7 @@ It is recommended that you mount a directory containing your PHP files at /conte
 
 It is recommended that you run the docker using a command-line like:
 
-docker run -i -t -v /home/user/content:/content -p 3363:80 your_user/phpwebserver
+docker run -v /home/user/content:/content -p 3363:80 your_user/phpwebserver
 
 Replace your_user by your user name.
 
@@ -37,4 +37,4 @@ The docker exposes the HTTP port 80. Instead of port 3336, map docker port 80 to
 
 You will see PHP web server logs directly on the console, which should be helpful in dev environment.
 
-If you don't want messages on the console, you can use -d option instead of -it .
+If you don't want messages on the console, you can add -d option to docker run
